@@ -29,3 +29,5 @@ sed -i -e s/\${full_name\}/$DM_FULL_NAME/g Dockerfile
 
 sed -i -e s/\${project\}/$DM_PROJECT/g Makefile
 sed -i -e s/\${project\}/$DM_PROJECT/g Dockerfile
+
+cp .gitignore .dockerignore
