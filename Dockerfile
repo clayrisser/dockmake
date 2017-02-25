@@ -5,7 +5,7 @@
 
 FROM ubuntu:latest
 
-MAINTAINER ${user_name} (${user})
+MAINTAINER ${full_name} (${user})
 
 WORKDIR /app
 
