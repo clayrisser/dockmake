@@ -18,8 +18,8 @@ if [ $_PROJECT_NEW ]; then
     _PROJECT=$_PROJECT_NEW
 fi
 
-curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/Dockerfile
-curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/Makefile
+curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/Dockerfile | tee Dockerfile
+curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/Makefile | tee Makefile
 
 sed -i -e s/\${user\}/$_USER/g Makefile
 sed -i -e s/\${user\}/$_USER/g Dockerfile
