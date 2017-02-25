@@ -7,22 +7,22 @@ curl -O https://raw.githubusercontent.com/jamrizzi/dockmake/master/setup.sh && b
 ```
 
 ## Usage
-* Run
+#### Run
 ```sh
 make
 ```
 
-* Fetch Dependencies
+#### Fetch Dependencies
 ```sh
 make fetch_dependencies
 ```
 
-* Build
+#### Build
 ```sh
 make build
 ```
 
-* Clean
+#### Clean
 ```
 make clean
 ```
