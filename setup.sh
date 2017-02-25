@@ -18,8 +18,8 @@ if [ $DM_PROJECT_NEW ]; then
     DM_PROJECT=$DM_PROJECT_NEW
 fi
 
-curl -oL https://raw.githubusercontent.com/jamrizzi/dockmake/master/Dockerfile
-curl -oL https://raw.githubusercontent.com/jamrizzi/dockmake/master/Makefile
+curl -O https://raw.githubusercontent.com/jamrizzi/dockmake/master/Dockerfile
+curl -O https://raw.githubusercontent.com/jamrizzi/dockmake/master/Makefile
 
 sed -i -e s/\${user\}/$DM_USER/g Makefile
 sed -i -e s/\${user\}/$DM_USER/g Dockerfile
