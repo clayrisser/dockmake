@@ -21,11 +21,11 @@ fi
 curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/Dockerfile
 curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/Makefile
 
-sed -i -e 's/${user\}/$_USER/g' Makefile
-sed -i -e 's/${user\}/$_USER/g' Dockerfile
+sed -i -e s/\${user\}/$_USER/g Makefile
+sed -i -e s/\${user\}/$_USER/g Dockerfile
 
-sed -i -e 's/${full_name\}/$_FULL_NAME/g' Makefile
-sed -i -e 's/${full_name\}/$_FULL_NAME/g' Dockerfile
+sed -i -e s/\${full_name\}/$_FULL_NAME/g Makefile
+sed -i -e s/\${full_name\}/$_FULL_NAME/g Dockerfile
 
-sed -i -e 's/${project\}/$_PROJECT/g' Makefile
-sed -i -e 's/${project\}/$_PROJECT/g' Dockerfile
+sed -i -e s/\${project\}/$_PROJECT/g Makefile
+sed -i -e s/\${project\}/$_PROJECT/g Dockerfile
