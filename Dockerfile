@@ -7,9 +7,10 @@ FROM ubuntu:latest
 
 MAINTAINER ${full_name} (${user})
 
-WORKDIR /app
+WORKDIR /app/
 
-RUN chmod -R 700 /app
+COPY ./ /app/
+RUN chmod -R 700 /app/
 
 ENTRYPOINT ["echo"]
 CMD ["world"]
