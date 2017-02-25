@@ -10,6 +10,7 @@ build:
 	$(info built myproject)
 
 .PHONY: push
+push:
 	docker push ${user}/${project}:latest
 	$(info pushed ${user}/${project}:latest)
 
