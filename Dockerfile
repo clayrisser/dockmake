@@ -14,8 +14,8 @@ WORKDIR /app/
 ADD https://github.com/krallin/tini/releases/download/${TINI_VERSION}/tini /bin/tini
 RUN chmod +x /bin/tini
 
-COPY ./ /app/
-RUN chmod -R 700 /app/
+COPY ./ ./
+RUN chmod -R 700 ./
 
 ENTRYPOINT ["tini", "--"]
 CMD ["echo", "hello world"]
