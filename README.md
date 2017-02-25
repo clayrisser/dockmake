@@ -2,23 +2,23 @@
 Automated docker build with make
 
 ## Setup
-```
-curl -L https://raw.githubusercontent.com/jamrizzi/dockmake/master/setup.sh | sh
+```sh
+curl -O https://raw.githubusercontent.com/jamrizzi/dockmake/master/setup.sh && bash setup.sh && rm setup.sh 
 ```
 
 ## Usage
 ### Run
-```
+```sh
 make
 ```
 
 ### Fetch Dependencies
-```
+```sh
 make fetch_dependencies
 ```
 
 ### Build
-```
+```sh
 make build
 ```
 
