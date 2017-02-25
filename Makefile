@@ -5,8 +5,8 @@ all: fetch_dependancies build sweep push
 
 .PHONY: build
 build:
-	docker pull ${user}/${project}
-	docker build -t ${user}/${project}:latest -f $(CWD)/${project}/Dockerfile $(CWD)/${project}
+	# docker pull ${user}/${project}
+	docker build -t ${user}/${project}:latest -f $(CWD)/Dockerfile $(CWD)
 	$(info built myproject)
 
 .PHONY: push
