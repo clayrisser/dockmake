@@ -1,6 +1,8 @@
 # dockmake
 Automated docker build with make
 
+![](assets/dockmake.png)
+
 ## Setup
 ```sh
 curl -O https://raw.githubusercontent.com/jamrizzi/dockmake/master/setup.sh && bash setup.sh && rm setup.sh 
